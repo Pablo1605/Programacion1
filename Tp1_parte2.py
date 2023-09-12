@@ -40,7 +40,7 @@ print(f"{f} grados fahrenheit equivalen a {c} grados celsius")
 nombre = input("Ingrese su nombre: ")
 a = input(f"{nombre} ¿Cual es tu cancion favorita?: ")
 
-#b)El problema es que la entrada de datos input es de string y no de un tipo de dato numerico (int o float)
+#b)El problema es que la entrada de datos input es de tipo string y no de un tipo de dato numerico (int o float)
 #Lo solucionaria de la siguiente manera:
 precio = float(input("Precio: "))
 total = precio + (precio*0.1)
@@ -50,10 +50,10 @@ total = precio + (precio*0.1)
 edad = int(input("Edad: "))
 print(f"Tu edad es {edad}")
 
-#d)El problema es que la variable "edad" no esta encerrada en una cadena "f"
+#d)El problema es que se esta usando una asignacion en lugar de una comparacion
 #Lo solucionaria de la siguiente manera:
 edad = int(input("Edad: "))
-print(f"Veamos si tu edad es 18... edad = {edad}") 
+print("Veamos si tu edad es 18...", edad == 18) 
 
 #Ejercicio 6
 num1 = int(input("Ingrese el primer numero: "))
@@ -183,13 +183,9 @@ aaaa = int(input("Ingrese su año de nacimiento: "))
 print(f"Su fecha de nacimiento es: {dd}/{mm}/{aaaa}")
 
 #Ejercicio 20
-dd = int(input("Ingrese su dia de nacimiento: "))
-mm = int(input("Ingrese su mes de nacimiento: "))
-aaaa = int(input("Ingrese su año de nacimiento: "))
+ddmmaaaa = int(input("Ingrese su dia de nacimiento en formato DDMMAA: "))
 
-fecha_ddmmaaa = dd*1000000 + mm * 10000 + aaaa
-
-print(f"Su fecha de nacimiento en formato DDMMAAA: ",fecha_ddmmaaa)
+print(f"SU fecha de nacimiento es: {ddmmaaaa}")
 
 #Ejercicio 21
 km_por_litro = float(input("Ingrese cuantos km puede recorrer su moto con 1 litro de combustible: "))
